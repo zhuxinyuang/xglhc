@@ -216,32 +216,32 @@ class Xglhc
 
   public  function ZhengMaGuoGuang($haoma, $num)
     {
-        if (($num == "大" || $num == "小") && $this->Six_DaXiao($haoma) == $num) {
+        if (($num == "大" || $num == "小") && $this->DaXiao($haoma) == $num) {
             return true;
         } else {
             return false;
         }
-        if (($num == "单" || $num == "双") && $this->Six_DanShuang($haoma) == $num) {
+        if (($num == "单" || $num == "双") && $this->_DanShuang($haoma) == $num) {
             return true;
         } else {
             return false;
         }
-        if (($num == "合大" || $num == "合小") && $this->Six_HeShuDaXiao($haoma) == $num) {
+        if (($num == "合大" || $num == "合小") && $this->HeShuDaXiao($haoma) == $num) {
             return true;
         } else {
             return false;
         }
-        if (($num == "合单" || $num == "合双") && $this->Six_HeShuDanShuang($haoma) == $num) {
+        if (($num == "合单" || $num == "合双") && $this->HeShuDanShuang($haoma) == $num) {
             return true;
         } else {
             return false;
         }
-        if (($num == "尾大" || $num == "尾小") && $this->Six_WeiShuDaXiao($haoma) == $num) {
+        if (($num == "尾大" || $num == "尾小") && $this->WeiShuDaXiao($haoma) == $num) {
             return true;
         } else {
             return false;
         }
-        if (($num == "红波" || $num == "蓝波" || $num == "绿波") && $this->Six_BoSe($haoma) == $num) {
+        if (($num == "红波" || $num == "蓝波" || $num == "绿波") && $this->BoSe($haoma) == $num) {
             return true;
         } else {
             return false;
